@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Link, usePathname } from "@/navigation"
-import { LucideIcon, ChevronDown, Search, Target, Share2, Code, Globe, Camera, Palette, Megaphone } from "lucide-react"
+import { LucideIcon, ChevronDown, Search, Target, Share2, Code, Globe, Camera, Palette, Megaphone, Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useTranslations } from 'next-intl'
 import LanguageSwitcher from "./LanguageSwitcher"
@@ -30,6 +30,8 @@ export default function Navbar() {
   const pathname = usePathname()
   const [isHovered, setIsHovered] = useState<string | null>(null)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileOpen, setIsMobileOpen] = useState(false)
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const openMenu = (name: string) => {
@@ -68,6 +70,22 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Rota değişince mobil menüyü kapat
+  useEffect(() => {
+    setIsMobileOpen(false)
+    setMobileServicesOpen(false)
+  }, [pathname])
+
+  // Mobil menü açıkken body scroll'u engelle
+  useEffect(() => {
+    if (isMobileOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => { document.body.style.overflow = "" }
+  }, [isMobileOpen])
+
   const activeTab = navItems.find((item) => {
     if (item.url === "/") return pathname === "/" || pathname === ""
     return pathname.startsWith(item.url)
@@ -76,23 +94,24 @@ export default function Navbar() {
   const servicesLabel = t('services')
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full px-12 py-5 flex items-center justify-between pointer-events-none">
+    <>
+    <header className="fixed top-0 left-0 right-0 z-50 w-full px-6 md:px-12 py-5 flex items-center justify-between pointer-events-none">
       {/* Logo - Sol Taraf */}
-      <div className="pointer-events-auto w-[225px] flex items-center">
+      <div className="pointer-events-auto w-[180px] md:w-[225px] flex items-center">
         <Link href="/" className="flex items-center">
           <Image 
             src="/logos/Main_Logo_Beyaz.png" 
             alt="Renee DesignLab" 
             width={200} 
             height={60} 
-            className="h-[60px] w-auto object-contain"
+            className="h-[48px] md:h-[60px] w-auto object-contain"
             priority
           />
         </Link>
       </div>
 
-      {/* Nav Linkleri - Orta Kısım */}
-      <div className="pointer-events-auto flex flex-col items-center">
+      {/* Nav Linkleri - Orta Kısım (sadece desktop) */}
+      <div className="pointer-events-auto hidden md:flex flex-col items-center">
         <div className="flex items-center gap-1 bg-white/5 border border-white/10 backdrop-blur-lg py-1 px-1 rounded-full shadow-lg relative max-w-fit">
           {navItems.map((item) => {
             const isActive = activeTab === item.name
@@ -178,11 +197,137 @@ export default function Navbar() {
         </AnimatePresence>
       </div>
 
-      {/* Sağ taraf - Analiz butonu */}
+      {/* Sağ taraf - Analiz butonu (sadece desktop) */}
       <div className="pointer-events-auto hidden md:flex items-center justify-end w-[225px]">
         <AnalysisModal />
       </div>
-    
+
+      {/* Hamburger butonu (sadece mobil) */}
+      <button
+        className="pointer-events-auto md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-white/10 border border-white/10 backdrop-blur-lg text-white"
+        onClick={() => setIsMobileOpen((v) => !v)}
+        aria-label="Menüyü aç/kapat"
+      >
+        <AnimatePresence mode="wait" initial={false}>
+          {isMobileOpen ? (
+            <motion.span key="close" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} transition={{ duration: 0.18 }}>
+              <X className="w-5 h-5" />
+            </motion.span>
+          ) : (
+            <motion.span key="open" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }} transition={{ duration: 0.18 }}>
+              <Menu className="w-5 h-5" />
+            </motion.span>
+          )}
+        </AnimatePresence>
+      </button>
     </header>
+
+    {/* Mobil Menü Overlay */}
+    <AnimatePresence>
+      {isMobileOpen && (
+        <motion.div
+          key="mobile-menu"
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "100%" }}
+          transition={{ type: "spring", stiffness: 260, damping: 30 }}
+          className="fixed inset-0 z-40 flex flex-col bg-[#0a0a0f]/95 backdrop-blur-2xl md:hidden"
+        >
+          {/* Üst bar */}
+          <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
+            <Link href="/" onClick={() => setIsMobileOpen(false)}>
+              <Image
+                src="/logos/Main_Logo_Beyaz.png"
+                alt="Renee DesignLab"
+                width={160}
+                height={48}
+                className="h-[44px] w-auto object-contain"
+                priority
+              />
+            </Link>
+            <button
+              onClick={() => setIsMobileOpen(false)}
+              className="w-10 h-10 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-white"
+              aria-label="Kapat"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
+
+          {/* Nav linkleri */}
+          <nav className="flex-1 overflow-y-auto px-6 py-8 flex flex-col gap-2">
+            {navItems.map((item, i) => {
+              const isActive = activeTab === item.name
+              if (item.hasMegaMenu) {
+                return (
+                  <div key={item.name}>
+                    <button
+                      onClick={() => setMobileServicesOpen((v) => !v)}
+                      className={cn(
+                        "w-full flex items-center justify-between px-4 py-4 rounded-2xl text-left text-base font-semibold transition-colors",
+                        isActive ? "bg-primary/10 text-white" : "text-white/60 hover:text-white hover:bg-white/5"
+                      )}
+                    >
+                      <span>{item.name}</span>
+                      <ChevronDown className={cn("w-4 h-4 transition-transform duration-300", mobileServicesOpen && "rotate-180")} />
+                    </button>
+                    <AnimatePresence>
+                      {mobileServicesOpen && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.22 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="flex flex-col gap-1 pl-2 pt-2 pb-2">
+                            {services.map((service) => (
+                              <Link
+                                key={service.title}
+                                href={service.href}
+                                onClick={() => setIsMobileOpen(false)}
+                                className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 transition-colors group"
+                              >
+                                <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors shrink-0">
+                                  <service.icon className="w-4 h-4 text-primary-light" />
+                                </div>
+                                <span className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{service.title}</span>
+                              </Link>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                )
+              }
+              return (
+                <Link
+                  key={item.name}
+                  href={item.url}
+                  onClick={() => setIsMobileOpen(false)}
+                  className={cn(
+                    "px-4 py-4 rounded-2xl text-base font-semibold transition-colors",
+                    isActive ? "bg-primary/10 text-white" : "text-white/60 hover:text-white hover:bg-white/5"
+                  )}
+                >
+                  {item.name}
+                </Link>
+              )
+            })}
+          </nav>
+
+          {/* Alt bar - dil + analiz butonu */}
+          <div className="px-6 py-6 border-t border-white/10 flex flex-col gap-4">
+            <div className="flex items-center justify-between">
+              <span className="text-sm text-white/40">Dil</span>
+              <LanguageSwitcher />
+            </div>
+            <AnalysisModal />
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+    </>
   )
 }
