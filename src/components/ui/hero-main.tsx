@@ -19,22 +19,25 @@ export default function HeroMain() {
   const t = useTranslations("HeroMain");
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* ── WAVES BACKGROUND (z-0) ───────────────────────────── */}
-      <Waves
-        strokeColor="#ec2027"
-        backgroundColor="#000000"
-        lineCount={14}
-        waveSpeedX={0.0007}
-        waveSpeedY={0.0005}
-        waveAmpX={36}
-        waveAmpY={22}
-        xGap={16}
-        yGap={34}
-        friction={0.93}
-        tension={0.0035}
-        maxCursorMove={80}
-        className="z-0"
-      />
+      {/* ── WAVES BACKGROUND — sadece desktop (mobilde performans tasarrufu) ── */}
+      <div className="hidden md:block absolute inset-0 z-0">
+        <Waves
+          strokeColor="#ec2027"
+          backgroundColor="#000000"
+          lineCount={14}
+          waveSpeedX={0.0007}
+          waveSpeedY={0.0005}
+          waveAmpX={36}
+          waveAmpY={22}
+          xGap={16}
+          yGap={34}
+          friction={0.93}
+          tension={0.0035}
+          maxCursorMove={80}
+        />
+      </div>
+      {/* Mobil için sade gradient arka plan */}
+      <div className="md:hidden absolute inset-0 z-0 bg-gradient-to-br from-[#0a0a0f] via-[#0d0005] to-[#0a0a0f]" />
 
       {/* ── SCHOOL IMAGE BACKGROUND ──────────────────────────── */}
       <div className="absolute inset-0 z-[1] overflow-hidden">

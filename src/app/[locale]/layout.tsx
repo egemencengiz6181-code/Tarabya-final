@@ -5,7 +5,14 @@ import Navbar from '@/components/shared/Navbar';
 import Footer from '@/components/shared/Footer';
 import {locales} from '@/config/locales';
 import Image from 'next/image';
+import { Inter } from 'next/font/google';
 import '../globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export function generateStaticParams() {
   return locales.map((locale) => ({locale}));
@@ -54,16 +61,16 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="dark">
-      <body className="bg-background text-foreground antialiased selection:bg-primary/30 min-h-screen relative">
+    <html lang={locale} className={`dark ${inter.variable}`}>
+      <body className="bg-background text-foreground antialiased selection:bg-primary/30 min-h-screen relative font-sans">
         {/* Arka Plan İkonu (Global Mühür) */}
         <div className="fixed top-[15%] right-[-250px] w-[900px] h-[900px] opacity-[0.08] rotate-12 pointer-events-none z-0">
           <Image 
-                      src="/logos/Fen%20bilimleri%20logo.png" 
+            src="/logos/Fen%20bilimleri%20logo.png" 
             alt="" 
             fill 
             className="object-contain"
-            priority
+            loading="lazy"
           />
         </div>
 

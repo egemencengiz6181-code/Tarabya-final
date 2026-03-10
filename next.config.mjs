@@ -6,6 +6,10 @@ const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 const nextConfig = {
   poweredByHeader: false,
   compress: true,
+  experimental: {
+    // Tree-shake büyük paketleri — bundle boyutunu önemli ölçüde azaltır
+    optimizePackageImports: ['framer-motion', 'lucide-react', 'next-intl'],
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
