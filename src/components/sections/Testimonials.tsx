@@ -42,17 +42,20 @@ function MarqueeRow({ items, direction }: { items: TestimonialItem[]; direction:
 }
 
 export default function TestimonialsSection({
-  items = [],
+  items: rawItems = [],
   subtitle = '',
   title = '',
 }: {
-  items?: TestimonialItem[];
+  items?: TestimonialItem[] | Record<string, TestimonialItem>;
   subtitle?: string;
   title?: string;
 }) {
-  const mid = Math.ceil((items?.length ?? 0) / 2);
-  const row1 = items?.slice(0, mid) ?? [];
-  const row2 = items?.slice(mid) ?? [];
+  const items: TestimonialItem[] = Array.isArray(rawItems)
+    ? rawItems
+    : Object.values(rawItems ?? {});
+  const mid = Math.ceil(items.length / 2);
+  const row1 = items.slice(0, mid);
+  const row2 = items.slice(mid);
 
   return (
     <section className="py-24 relative overflow-hidden">

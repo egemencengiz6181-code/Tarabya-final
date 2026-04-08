@@ -5,8 +5,13 @@ export default async function ReferencesPage() {
   const tRef  = await getTranslations('References');
   const tTest = await getTranslations('Testimonials');
 
-  const rawItems = tTest.raw('items');
-  const testimonialItems: TestimonialItem[] = Array.isArray(rawItems) ? rawItems : [];
+  let rawItems: unknown;
+  try { rawItems = tTest.raw('items'); } catch { rawItems = []; }
+  const testimonialItems: TestimonialItem[] = Array.isArray(rawItems)
+    ? rawItems
+    : typeof rawItems === 'object' && rawItems !== null
+      ? (Object.values(rawItems) as TestimonialItem[])
+      : [];
 
   return (
     <ReferencesContent

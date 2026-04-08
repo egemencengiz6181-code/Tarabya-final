@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
@@ -18,7 +19,11 @@ export function ShimmerText({
   delay = 1.0,
 }: ShimmerTextProps) {
   const { resolvedTheme } = useTheme();
-  const isDark = resolvedTheme === "dark";
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
+  // Use stable fallback until mounted to prevent SSR/client mismatch
+  const isDark = mounted ? resolvedTheme === "dark" : false;
   const c = isDark ? "255,255,255" : "0,0,0";
   const lo = isDark ? 0.08 : 0.06;
   const hi = isDark ? 0.22 : 0.15;

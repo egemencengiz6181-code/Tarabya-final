@@ -18,9 +18,12 @@ interface TestimonialsSectionProps {
   title: string;
 }
 
-const LetsWorkSection = dynamic(() => import('@/components/ui/lets-work-section'));
+const LetsWorkSection = dynamic(() => import('@/components/ui/lets-work-section'), {
+  ssr: false,
+});
 const TestimonialsSection = dynamic<TestimonialsSectionProps>(
-  () => import('@/components/sections/Testimonials')
+  () => import('@/components/sections/Testimonials'),
+  { ssr: false },
 );
 
 const successStories = [
