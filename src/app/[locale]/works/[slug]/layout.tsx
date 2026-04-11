@@ -8,7 +8,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const origin = 'https://www.halkalifinal.com';
+  const origin = 'https://www.tarabyafinal.com';
   const path = `${origin}/${locale}/works/${slug}`;
 
   const rawWork = getWorkBySlug(slug);
@@ -17,7 +17,7 @@ export async function generateMetadata({
   const work = getLocalizedWork(rawWork, locale);
   const t = await getTranslations({ locale, namespace: 'Works' });
 
-  const title = `${work.brand} – ${work.tagline} | Halkalı Final LGS Dershanesi`;
+  const title = `${work.brand} – ${work.tagline} | Tarabya Final Dershanesi`;
   const description = work.story?.challenge ?? work.tagline;
 
   return {

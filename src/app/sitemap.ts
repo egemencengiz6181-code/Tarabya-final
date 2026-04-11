@@ -1,14 +1,21 @@
 import type { MetadataRoute } from 'next';
 import { works } from '@/config/works';
 
-const origin = 'https://www.halkalifinal.com';
+const origin = 'https://www.tarabyafinal.com';
 const locales = ['tr'] as const;
 
 const serviceSlugs = [
-  '5-sinif',
   '6-sinif',
   '7-sinif',
   '8-sinif',
+  '8-sinif-vip',
+  '8-sinif-vip-ozel-dersli',
+  '10-sinif',
+  '11-sinif',
+  '11-sinif-vip',
+  '12-sinif',
+  '12-sinif-vip',
+  'mezun',
   'deneme-kulubu',
   'ozel-ders',
 ] as const;

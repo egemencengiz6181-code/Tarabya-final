@@ -47,7 +47,7 @@ export default function Footer() {
             <Link href="/" className="inline-block">
               <Image 
                 src="/logos/final%20logo%20png.png" 
-                alt="Halkalı Final LGS Dershanesi" 
+                alt="Tarabya Final Dershanesi" 
                 width={200} 
                 height={80} 
                 className="h-20 w-auto object-contain"
@@ -107,8 +107,8 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-3 text-foreground/40">
                   <Mail className="w-5 h-5 text-primary shrink-0" />
-                  <a href="mailto:halkalifinaletutmerkezi@abdkurumlari.com" className="hover:text-white transition-colors">
-                    halkalifinaletutmerkezi@abdkurumlari.com
+                  <a href="mailto:tarabyaozelogretimkursu@abdkurumlari.com" className="hover:text-white transition-colors">
+                    tarabyaozelogretimkursu@abdkurumlari.com
                   </a>
                 </div>
               </div>

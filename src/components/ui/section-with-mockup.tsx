@@ -141,7 +141,7 @@ const SectionWithMockup: React.FC<SectionWithMockupProps> = ({ title, descriptio
 
             {/* Front image — okul2 */}
             <FloatingImage
-              src="/okul2/unnamed-7.jpg"
+              src="/okul2/unnamedyeni.jpg"
               float={{ y: [0, 10, 0], duration: 7, delay: 1.2 }}
               className="absolute top-0 right-0 w-[70%] h-[78%] rounded-2xl overflow-hidden border border-white/[0.11] shadow-2xl cursor-pointer"
             >

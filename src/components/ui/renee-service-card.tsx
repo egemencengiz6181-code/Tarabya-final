@@ -2,16 +2,23 @@
 
 import React, { useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
-import { type LucideIcon, ArrowRight, BookOpen, GraduationCap, Trophy, FileText, Users } from 'lucide-react';
+import { type LucideIcon, ArrowRight, BookOpen, GraduationCap, Trophy, FileText, Users, Star, Award } from 'lucide-react';
 import { Link } from '@/navigation';
 
 const SLUG_ICONS: Record<string, LucideIcon> = {
-  '5-sinif':        BookOpen,
-  '6-sinif':        BookOpen,
-  '7-sinif':        BookOpen,
-  '8-sinif':        GraduationCap,
-  'deneme-kulubu':  FileText,
-  'ozel-ders':      Users,
+  '6-sinif':                BookOpen,
+  '7-sinif':                BookOpen,
+  '8-sinif':                GraduationCap,
+  '8-sinif-vip':            Star,
+  '8-sinif-vip-ozel-dersli': Award,
+  '10-sinif':               BookOpen,
+  '11-sinif':               GraduationCap,
+  '11-sinif-vip':           Star,
+  '12-sinif':               Trophy,
+  '12-sinif-vip':           Award,
+  'mezun':                  Award,
+  'deneme-kulubu':          FileText,
+  'ozel-ders':              Users,
 };
 
 interface ReneeServiceCardProps {
@@ -80,7 +87,7 @@ export default function ReneeServiceCard({ title, description, slug, href, featu
             </p>
 
             <ul className="space-y-3">
-              {features.map((feature, i) => (
+              {(features ?? []).map((feature, i) => (
                 <li key={i} className="flex items-center gap-2 text-xs text-slate-700 dark:text-white/80">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                   {feature}

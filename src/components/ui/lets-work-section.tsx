@@ -42,7 +42,7 @@ export default function LetsWorkSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/okul/okul.jpeg"
-          alt="Halkalı Final LGS Dershanesi"
+          alt="Tarabya Final Dershanesi"
           fill
           className="object-cover opacity-[0.12] mix-blend-luminosity"
           priority={false}
@@ -107,13 +107,13 @@ export default function LetsWorkSection() {
             </button>
 
             <a
-              href="mailto:halkalifinaletutmerkezi@abdkurumlari.com"
+              href="mailto:tarabyaozelogretimkursu@abdkurumlari.com"
               className="flex items-center gap-3 text-foreground/60 hover:text-slate-900 dark:hover:text-white transition-colors group min-w-0"
             >
               <div className="w-12 h-12 rounded-full border border-black/10 dark:border-white/10 flex items-center justify-center group-hover:border-primary/50 group-hover:bg-primary/5 transition-all shrink-0">
                 <Mail className="w-5 h-5" />
               </div>
-              <span className="font-light text-sm sm:text-base truncate">halkalifinaletutmerkezi@abdkurumlari.com</span>
+              <span className="font-light text-sm sm:text-base truncate">tarabyaozelogretimkursu@abdkurumlari.com</span>
             </a>
           </motion.div>
 

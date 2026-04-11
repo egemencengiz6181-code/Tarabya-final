@@ -27,7 +27,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Index' });
 
-  const origin = 'https://www.halkalifinal.com';
+  const origin = 'https://www.tarabyafinal.com';
 
   return {
     title: t('title'),
@@ -38,7 +38,7 @@ export async function generateMetadata({
     openGraph: {
       type: 'website',
       locale: 'tr_TR',
-      siteName: 'Halkalı Final LGS Dershanesi',
+      siteName: 'Tarabya Final Dershanesi',
       title: t('title'),
       description: t('description'),
       url: `${origin}/${locale}`,

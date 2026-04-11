@@ -1,10 +1,10 @@
 {
   "Index": {
-    "title": "Halkalı Final LGS Academy | Küçükçekmece Istanbul",
-    "description": "Halkalı Final LGS Academy — Comprehensive middle school and LGS prep programs in Küçükçekmece."
+    "title": "Tarabya Final Academy | Sarıyer Istanbul",
+    "description": "Tarabya Final Academy — Comprehensive middle school, high school and LGS/YKS prep programs in Sarıyer."
   },
   "Hero": {
-    "eyebrow": "Halkalı · Küçükçekmece / Istanbul",
+    "eyebrow": "Tarabya · Sarıyer / Istanbul",
     "title": "The Road to Success",
     "subtitle": "The right place to reach your target high school in LGS.",
     "headline": "We Chart the Path to Your Goal Together",
@@ -19,13 +19,13 @@
     "cta": "Register & Get Info"
   },
   "Services": {
-    "meta_title": "Our Programs | Halkalı Final LGS Academy",
+    "meta_title": "Our Programs | Tarabya Final Academy",
     "meta_description": "Comprehensive and personalized study programs for middle school students, focused on LGS.",
     "title": "Our Programs",
     "subtitle": "Expertly designed study programs tailored to each student's goal.",
     "cta": "Get Info",
     "back": "All Programs",
-    "discovery_title": "Why Halkalı Final LGS Academy?",
+    "discovery_title": "Why Tarabya Final Academy?",
     "strategy_section": "Program Details",
     "tech_section": "Publisher & Hours",
     "scope": "Scope",
@@ -37,33 +37,6 @@
       "vip": "VIP Programs"
     },
     "items": {
-      "5-sinif": {
-        "title": "5th Grade",
-        "description": "Strong subject foundations. 2 days/weekend, 12 lesson hours/week, study sessions and guidance support.",
-        "hero_quote": "A strong foundation builds a bright future.",
-        "intro": "Our 5th grade program aims to help students build a solid foundation in core subjects and adapt early to the LGS process.",
-        "body": "Students attend courses 2 days on weekends (Saturday and Sunday). They receive 12 lesson hours in total. Extra weekly question-solving study sessions are held. Students attend study sessions 1 day per week on weekdays. They can ask their questions during one-on-one question-solving hours with teachers. Through the Kunduz program, students can ask teachers questions at any time and place. Recognition and attention tests are conducted by our Guidance Unit. Students' emotional and psychological states are reported. Progress charts are saved to our digital application. Students reinforce their knowledge through new-generation questions. Activities include exam preparation, LGS familiarization, supplementary school subject training, reading activities, attention-improving exercises, reading comprehension and test technique development.",
-        "strategy_title": "Program Content",
-        "phase1_title": "Core Subjects",
-        "phase1_text": "In-depth coverage of Math, Science, Turkish and Social Studies topics.",
-        "phase2_title": "Tests & Evaluation",
-        "phase2_text": "Regular topic tests and assessment exams. Parent information reports.",
-        "phase3_title": "Individual Tracking & Guidance",
-        "phase3_text": "Advisor teacher and guidance unit support that individually monitors each student's development.",
-        "result_title": "Outcomes",
-        "result_text": "Strong foundational knowledge, exam habits and a ready start toward the LGS process.",
-        "tech_title": "12 lesson hours/week · 2 days/weekend",
-        "tech_intro": "Weekend course (Sat-Sun), 1 weekday study session. Total 12 lesson hours.",
-        "tech_tools": "Subject instruction · Test solving · Study sessions · Guidance",
-        "features": [
-          "Subject instruction",
-          "Test solving",
-          "Weekly study sessions",
-          "Guidance unit"
-        ],
-        "meta_title": "5th Grade Program | Halkalı Final LGS Academy",
-        "meta_description": "Comprehensive 12-hour-per-week program with study sessions and guidance for 5th grade students."
-      },
       "6-sinif": {
         "title": "6th Grade",
         "description": "Reinforcing middle school foundations. 2 days/weekend, 12 lesson hours/week, study sessions and guidance support.",
@@ -88,7 +61,7 @@
           "Weekly study sessions",
           "Guidance unit"
         ],
-        "meta_title": "6th Grade Program | Halkalı Final LGS Academy",
+        "meta_title": "6th Grade Program | Tarabya Final Academy",
         "meta_description": "Comprehensive 12-hour-per-week program with study sessions and guidance for 6th grade students."
       },
       "7-sinif": {
@@ -115,7 +88,7 @@
           "Individual guidance",
           "Camp programs"
         ],
-        "meta_title": "7th Grade Program | Halkalı Final LGS Academy",
+        "meta_title": "7th Grade Program | Tarabya Final Academy",
         "meta_description": "Comprehensive 12-hour-per-week program with individual guidance and one-on-one Q&A for 7th grade students."
       },
       "8-sinif": {
@@ -142,63 +115,176 @@
           "AI analysis",
           "Individual guidance"
         ],
-        "meta_title": "8th Grade & LGS Preparation | Halkalı Final LGS Academy",
+        "meta_title": "8th Grade & LGS Preparation | Tarabya Final Academy",
         "meta_description": "Intensive 12-hour-per-week preparation program for LGS with weekly mock exams and AI-powered analysis."
       },
-
-      "deneme-kulubu": {
-        "title": "Mock Exam Club",
-        "description": "Regular LGS mock exams, net analysis and peer learning. Open to all grade levels.",
-        "hero_quote": "Every mock exam takes you one step forward.",
-        "intro": "The Mock Exam Club aims to provide regular exam experience to all middle school grade students. Weekly LGS format mock exams and detailed net analysis.",
-        "body": "Students continuously improve through group evaluation sessions and peer learning.",
-        "strategy_title": "Mock Exam Club Program",
-        "phase1_title": "Weekly LGS Mock Exams",
-        "phase1_text": "Full weekly mock exams in LGS format. Practice under real exam conditions.",
-        "phase2_title": "Net Analysis",
-        "phase2_text": "Topic-based net analysis after mock exams, individual review of incorrectly answered questions.",
-        "phase3_title": "Group Evaluation",
-        "phase3_text": "Group sessions where students evaluate together and peer learning.",
-        "result_title": "Outcome",
-        "result_text": "Continuously increasing net score, exam habits and strengthened confidence.",
-        "tech_title": "LGS Format · Weekly mock + analysis",
-        "tech_intro": "Weekly mock exams in LGS format. Analysis sessions included.",
-        "tech_tools": "Weekly mock exam · Net analysis · Group evaluation · Progress tracking",
-        "features": [
-          "Weekly mock exam",
-          "Net analysis",
-          "Group evaluation",
-          "Progress tracking"
-        ],
-        "meta_title": "Mock Exam Club | Halkalı Final LGS Academy",
-        "meta_description": "Weekly LGS format mock exams, net analysis and group evaluation."
-      },
-      "rehberlik": {
-        "title": "Guidance",
-        "description": "One-on-one psychological and academic guidance for career planning, motivation and exam anxiety.",
-        "hero_quote": "Success comes with working in the right direction. Our guidance program helps you determine the direction.",
-        "intro": "Our guidance program is a comprehensive counseling service that supports academic and personal development. Exam anxiety, career planning and parent communication are conducted together.",
-        "body": "The process is transparently monitored through one-on-one sessions and regular parent reports.",
-        "strategy_title": "Guidance Services",
-        "phase1_title": "Academic Guidance",
-        "phase1_text": "One-on-one counseling on goal setting, field selection and creating a study plan.",
-        "phase2_title": "Psychological Support",
-        "phase2_text": "Expert support for exam anxiety, low motivation and stress management.",
-        "phase3_title": "Parent Communication",
-        "phase3_text": "Regular parent meetings and student progress reports.",
+      "8-sinif-vip": {
+        "title": "8th Grade VIP",
+        "description": "VIP program with classes of up to 8 students. 14 lesson hours/week, weekly mock exams, individual tutoring and AI-powered analysis.",
+        "hero_quote": "With smaller classes and personal attention, your LGS goal is closer than ever.",
+        "intro": "Our 8th Grade VIP program limits class sizes to a maximum of 8 students, ensuring every student receives the individual attention they deserve during intensive LGS preparation.",
+        "body": "Students attend 2 days on weekends and 2 days on weekdays for a total of 14 lesson hours per week. Each student has dedicated one-on-one question-solving time with their teacher. Weekly mock exams are followed by AI-powered analysis and personalized question banks. Individual counseling sessions are held weekly, and progress is shared with parents regularly.",
+        "strategy_title": "VIP 8th Grade Learning Model",
+        "phase1_title": "Small Group & Intensive Lessons",
+        "phase1_text": "14 lesson hours/week in classes of up to 8 students. Guaranteed individual attention throughout LGS preparation.",
+        "phase2_title": "Weekly Mock Exams & AI Analysis",
+        "phase2_text": "Weekly LGS mock exams, AI-powered personal question bank creation and weak area targeting.",
+        "phase3_title": "Guidance & Individual Tracking",
+        "phase3_text": "Weekly individual counseling sessions, advisor teacher monitoring and regular parent updates.",
+        "phase4_title": "Differentiated Practice",
+        "phase4_text": "Topic-based question solving sessions, special study camp programs and motivation activities.",
         "result_title": "Goal",
-        "result_text": "Students with high confidence, goal-oriented focus and strong motivation.",
-        "tech_title": "Expert Staff · Need-based",
-        "tech_intro": "One-on-one meeting opportunity with an expert teacher and counselor staff.",
-        "tech_tools": "One-on-one sessions · Career plan · Parent report · Motivational support",
+        "result_text": "Achieving a high net score in LGS and placing in a science high school or target Anatolian high school.",
+        "tech_title": "VIP · 14 lesson hours/week · Max 8 students",
+        "tech_intro": "Small class guarantee, weekly mock exams and AI analysis. 2 days weekend + 2 days weekday.",
+        "tech_tools": "Small class (max 8) · 14 hours/week · Weekly mock · AI analysis · Private tutoring",
         "features": [
-          "One-on-one sessions",
-          "Career plan",
-          "Parent report",
-          "Motivational support"
+          "Max 8 students per class",
+          "14 lesson hours/week",
+          "Weekly mock exams",
+          "AI-powered analysis"
         ],
-        "meta_title": "Guidance Program | Halkalı Final LGS Academy",
-        "meta_description": "One-on-one guidance for career planning, exam anxiety management and motivation."
+        "meta_title": "8th Grade VIP | Tarabya Final Academy",
+        "meta_description": "8th Grade VIP program. Max 8 students per class, 14 hours/week, weekly mock exams and AI analysis."
+      },
+      "8-sinif-vip-ozel-dersli": {
+        "title": "8th Grade VIP + Private",
+        "description": "VIP program with up to 8 students plus dedicated private tutoring sessions tailored to each student's weak areas.",
+        "hero_quote": "The ultimate LGS preparation: small classes, personal coaching and private lessons combined.",
+        "intro": "Our 8th Grade VIP + Private program combines the VIP small-class experience with additional one-on-one private tutoring, delivering the most personalized LGS preparation available.",
+        "body": "Students attend 14 lesson hours per week in classes of at most 8 students, plus scheduled private tutoring sessions focused on their individual weak areas. Weekly mock exams are analyzed with AI tools to generate personalized question banks. Individual counseling runs alongside the academic program to keep motivation and focus high throughout the year.",
+        "strategy_title": "VIP + Private 8th Grade Model",
+        "phase1_title": "VIP Small Group Lessons",
+        "phase1_text": "14 lesson hours/week, max 8 students per class. Strong peer learning environment with guaranteed personal attention.",
+        "phase2_title": "Private Tutoring Sessions",
+        "phase2_text": "Scheduled one-on-one private lessons targeting each student's personal weak areas and accelerating progress.",
+        "phase3_title": "Mock Exams & Guidance",
+        "phase3_text": "Weekly LGS mock exams, AI analysis, individual counseling and weekly parent communication.",
+        "phase4_title": "Intensive Review & Camps",
+        "phase4_text": "Topic revision sessions, study camp programs and motivational activities throughout the year.",
+        "result_title": "Goal",
+        "result_text": "Maximizing LGS net score with personalized support to reach the student's top target school.",
+        "tech_title": "VIP + Private · Max 8 students · Private tutoring included",
+        "tech_intro": "The most comprehensive 8th grade option: VIP small-class lessons plus individual private tutoring.",
+        "tech_tools": "VIP class (max 8) · Private tutoring · Weekly mock · AI analysis · Guidance",
+        "features": [
+          "Max 8 students per class",
+          "Private tutoring included",
+          "Weekly mock exams",
+          "AI analysis + guidance"
+        ],
+        "meta_title": "8th Grade VIP + Private | Tarabya Final Academy",
+        "meta_description": "8th Grade VIP program with private tutoring. Max 8 students per class plus personal one-on-one sessions."
+      },
+      "10-sinif": {
+        "title": "10th Grade",
+        "description": "Early YKS preparation with TYT foundations. 12 lesson hours/week, regular mock exams and individual guidance.",
+        "hero_quote": "Starting YKS preparation in 10th grade gives you a decisive advantage.",
+        "intro": "Our 10th Grade program focuses on building strong TYT foundations early, giving students a head start on their YKS journey with systematic topic coverage and regular mock exams.",
+        "body": "Students attend courses 2 days on weekends and 1 day on weekdays, totaling 12 lesson hours per week. Topic tests and mock exams are held regularly, with results analyzed to identify and address weak areas. An advisor teacher monitors each student's academic progress and communicates with parents monthly.",
+        "strategy_title": "10th Grade Program Content",
+        "phase1_title": "TYT Foundations",
+        "phase1_text": "Systematic coverage of core TYT subjects: Math, Turkish, Science and Social Studies.",
+        "phase2_title": "Mock Exams & Feedback",
+        "phase2_text": "Regular topic tests and TYT-format mock exams. Personalized feedback and parent updates.",
+        "phase3_title": "Individual Guidance",
+        "phase3_text": "Advisor teacher support, personal study plan preparation and motivation coaching.",
+        "result_title": "Outcomes",
+        "result_text": "Strong TYT foundations, structured study habits and a confident start into the intensive YKS process.",
+        "tech_title": "12 lesson hours/week · 2 weekend + 1 weekday",
+        "tech_intro": "2 weekend days plus 1 weekday, total 12 lesson hours per week. Mock exams and guidance included.",
+        "tech_tools": "Subject instruction · TYT mock exams · Individual guidance · Study plan",
+        "features": [
+          "TYT subject instruction",
+          "Regular mock exams",
+          "Individual guidance",
+          "Study plan preparation"
+        ],
+        "meta_title": "10th Grade Program | Tarabya Final Academy",
+        "meta_description": "10th grade early YKS preparation. 12 lesson hours/week with regular mock exams and individual guidance."
+      },
+      "11-sinif": {
+        "title": "11th Grade",
+        "description": "TYT + AYT preparation. 14 lesson hours/week, bi-weekly mock exams and individual guidance.",
+        "hero_quote": "11th grade is the year your YKS future is shaped — make the most of every week.",
+        "intro": "Our 11th Grade program intensifies YKS preparation with combined TYT and AYT topic coverage, bi-weekly mock exams and dedicated individual guidance.",
+        "body": "Students attend 2 days on weekends and 2 days on weekdays, totaling 14 lesson hours per week. Mock exams are held every two weeks and analyzed in detail to create targeted study plans. An advisor teacher monitors progress and meets with parents monthly. Study camps and motivation activities are integrated throughout the year.",
+        "strategy_title": "11th Grade YKS Preparation",
+        "phase1_title": "TYT + AYT Instruction",
+        "phase1_text": "Comprehensive coverage of TYT core subjects and AYT field subjects throughout the academic year.",
+        "phase2_title": "Bi-weekly Mock Exams",
+        "phase2_text": "TYT + AYT mock exams every two weeks, detailed analysis and personalized study plan updates.",
+        "phase3_title": "Guidance & Tracking",
+        "phase3_text": "Advisor teacher monitoring, individual counseling sessions, university introduction events and parent communication.",
+        "result_title": "Outcomes",
+        "result_text": "Solid TYT and AYT foundations, strong exam habits and readiness for intensive 12th grade preparation.",
+        "tech_title": "14 lesson hours/week · Bi-weekly mock exams",
+        "tech_intro": "2 weekend days and 2 weekdays, 14 lesson hours/week. TYT+AYT mocks every 2 weeks.",
+        "tech_tools": "TYT+AYT instruction · Bi-weekly mock · Individual guidance · Study camps",
+        "features": [
+          "TYT + AYT instruction",
+          "Bi-weekly mock exams",
+          "Individual guidance",
+          "University introductions"
+        ],
+        "meta_title": "11th Grade Program | Tarabya Final Academy",
+        "meta_description": "11th grade YKS preparation. 14 lesson hours/week, bi-weekly TYT+AYT mock exams and individual guidance."
+      },
+      "11-sinif-vip": {
+        "title": "11th Grade VIP",
+        "description": "VIP classes of up to 8 students. 14 lesson hours/week, bi-weekly mock exams, individual tutoring and AI-powered analysis.",
+        "hero_quote": "With a smaller class and personal attention, your YKS success in 11th grade starts now.",
+        "intro": "Our 11th Grade VIP program limits class sizes to a maximum of 8 students, ensuring each student receives intensive personal attention during TYT and AYT preparation.",
+        "body": "Students receive 14 lesson hours per week in classes of at most 8 students. Mock exams are held every two weeks, followed by AI-powered analysis and personalized question bank creation. Individual counseling sessions run weekly, and parents are updated regularly by the advisor teacher.",
+        "strategy_title": "VIP 11th Grade Learning Model",
+        "phase1_title": "Small Group TYT + AYT Lessons",
+        "phase1_text": "14 lesson hours/week in classes of max 8 students. TYT and AYT subjects covered in depth with individual attention.",
+        "phase2_title": "Bi-weekly Mocks & AI Analysis",
+        "phase2_text": "TYT+AYT mock exams every 2 weeks, AI-powered analysis and personalized question bank creation.",
+        "phase3_title": "Individual Guidance & Tracking",
+        "phase3_text": "Weekly counseling sessions, advisor teacher monitoring, university visits and regular parent updates.",
+        "phase4_title": "Differentiated Practice",
+        "phase4_text": "One-on-one question solving, private tutoring sessions and motivation activities.",
+        "result_title": "Goal",
+        "result_text": "Strong TYT and AYT foundations with personalized support, ready for intensive 12th grade preparation.",
+        "tech_title": "VIP · 14 lesson hours/week · Max 8 students",
+        "tech_intro": "Small class guarantee, bi-weekly mocks and AI analysis. 11th grade TYT+AYT VIP preparation.",
+        "tech_tools": "Small class (max 8) · 14 hours/week · Bi-weekly mock · AI analysis · Guidance",
+        "features": [
+          "Max 8 students per class",
+          "14 lesson hours/week",
+          "Bi-weekly TYT+AYT mocks",
+          "AI-powered analysis"
+        ],
+        "meta_title": "11th Grade VIP | Tarabya Final Academy",
+        "meta_description": "11th Grade VIP program. Max 8 students per class, 14 hours/week, bi-weekly mocks and AI analysis."
+      },
+      "12-sinif": {
+        "title": "12th Grade",
+        "description": "Intensive YKS preparation. 16 lesson hours/week, bi-weekly mock exams and individual guidance.",
+        "hero_quote": "This is your year — with the right strategy and consistent effort, your target university is reachable.",
+        "intro": "Our 12th Grade program provides intensive YKS preparation with comprehensive TYT and AYT coverage, bi-weekly mock exams and dedicated individual guidance throughout the final year.",
+        "body": "Students attend 2 days on weekends and 2 days on weekdays, totaling 16 lesson hours per week. Mock exams are held every two weeks, analyzed in detail and used to generate personalized study plans. An advisor teacher monitors each student closely and communicates with parents regularly. Study camps and motivation activities are integral parts of the program.",
+        "strategy_title": "12th Grade YKS Preparation",
+        "phase1_title": "TYT + AYT Intensive Instruction",
+        "phase1_text": "Comprehensive coverage of all TYT and AYT subjects. Systematic topic revision and test solving.",
+        "phase2_title": "Bi-weekly Mock Exams & Analysis",
+        "phase2_text": "TYT+AYT mock exams every two weeks, detailed analysis and targeted weak area study plans.",
+        "phase3_title": "Guidance & Motivation",
+        "phase3_text": "Individual counseling, advisor teacher tracking, university introduction events and regular parent communication.",
+        "result_title": "Goal",
+        "result_text": "Achieving the target YKS score and securing a place at the desired university.",
+        "tech_title": "16 lesson hours/week · Bi-weekly mock exams",
+        "tech_intro": "2 weekend days and 2 weekdays, 16 lesson hours/week. TYT+AYT mocks every 2 weeks with guidance.",
+        "tech_tools": "TYT+AYT instruction · Bi-weekly mock · Individual guidance · Study camps",
+        "features": [
+          "TYT + AYT instruction",
+          "Bi-weekly mock exams",
+          "Individual guidance",
+          "Study camps"
+        ],
+        "meta_title": "12th Grade Program | Tarabya Final Academy",
+        "meta_description": "12th grade YKS preparation. 16 lesson hours/week, bi-weekly TYT+AYT mock exams and individual guidance."
       },
       "12-sinif-vip": {
         "title": "12th Grade VIP",
@@ -226,12 +312,12 @@
           "Kunduz & Baykuş programs",
           "AI-powered analysis"
         ],
-        "meta_title": "12th Grade VIP | Halkalı Final LGS Academy",
+        "meta_title": "12th Grade VIP | Tarabya Final Academy",
         "meta_description": "12th Grade VIP program. 5-8 students per class, 16 hours/week, 45 mock exams and 40 hours of tutoring."
       },
-      "mezun-vip": {
-        "title": "Graduate VIP",
-        "description": "VIP classes of 5-8 students, 18 lesson hours/week, 2 mock exams per week and 40 hours of individual tutoring.",
+      "mezun": {
+        "title": "Graduate",
+        "description": "Standard graduate program. Intensive YKS preparation for those repeating the year, 12 lesson hours/week and weekly mock exams.",
         "hero_quote": "Preparing for YKS one more year is not starting over – it is continuing stronger.",
         "intro": "Our Graduate VIP program keeps class sizes between 5-8 students. Students receive a total of 18 lesson hours per week, take individual question-solving sessions with their teachers, and can access up to 40 individual tutoring hours throughout the year.",
         "body": "Through the Kunduz program, students can reach teachers at any time and place. The Baykuş library program allows evening study under teacher supervision. Two mock exams are held per week, and AI-powered analyses create personalized question banks tailored to each student's level and weak areas. Weekly individual counseling sessions are conducted, coaches monitor programs and update parents regularly. The program begins with a Summer Camp for an early start, and university introduction events, motivation activities and camp programs are conducted throughout the year.",
@@ -255,8 +341,35 @@
           "AI-powered analysis",
           "Summer camp kickoff"
         ],
-        "meta_title": "Graduate VIP | Halkalı Final LGS Academy",
-        "meta_description": "Graduate VIP program. 5-8 students per class, 18 hours/week, 2 mock exams per week and 40 hours of tutoring."
+        "meta_title": "Graduate Program | Tarabya Final Academy",
+        "meta_description": "Intensive YKS preparation for graduates. 12 lesson hours/week and weekly mock exams."
+      },
+      "deneme-kulubu": {
+        "title": "Mock Exam Club",
+        "description": "Regular LGS mock exams, net analysis and peer learning. Open to all grade levels.",
+        "hero_quote": "Every mock exam takes you one step forward.",
+        "intro": "The Mock Exam Club aims to provide regular exam experience to all middle school grade students. Weekly LGS format mock exams and detailed net analysis.",
+        "body": "Students continuously improve through group evaluation sessions and peer learning.",
+        "strategy_title": "Mock Exam Club Program",
+        "phase1_title": "Weekly LGS Mock Exams",
+        "phase1_text": "Full weekly mock exams in LGS format. Practice under real exam conditions.",
+        "phase2_title": "Net Analysis",
+        "phase2_text": "Topic-based net analysis after mock exams, individual review of incorrectly answered questions.",
+        "phase3_title": "Group Evaluation",
+        "phase3_text": "Group sessions where students evaluate together and peer learning.",
+        "result_title": "Outcome",
+        "result_text": "Continuously increasing net score, exam habits and strengthened confidence.",
+        "tech_title": "LGS Format · Weekly mock + analysis",
+        "tech_intro": "Weekly mock exams in LGS format. Analysis sessions included.",
+        "tech_tools": "Weekly mock exam · Net analysis · Group evaluation · Progress tracking",
+        "features": [
+          "Weekly mock exam",
+          "Net analysis",
+          "Group evaluation",
+          "Progress tracking"
+        ],
+        "meta_title": "Mock Exam Club | Tarabya Final Academy",
+        "meta_description": "Weekly LGS format mock exams, net analysis and group evaluation."
       },
       "ozel-ders": {
         "title": "Private Tutoring",
@@ -283,27 +396,54 @@
           "Gap analysis",
           "Continuous tracking"
         ],
-        "meta_title": "Private Tutoring | Halkalı Final LGS Academy",
+        "meta_title": "Private Tutoring | Tarabya Final Academy",
         "meta_description": "One-on-one private tutoring program. Personalized lesson plans with expert instructors."
+      },
+      "rehberlik": {
+        "title": "Guidance",
+        "description": "One-on-one psychological and academic guidance for career planning, motivation and exam anxiety.",
+        "hero_quote": "Success comes with working in the right direction. Our guidance program helps you determine the direction.",
+        "intro": "Our guidance program is a comprehensive counseling service that supports academic and personal development. Exam anxiety, career planning and parent communication are conducted together.",
+        "body": "The process is transparently monitored through one-on-one sessions and regular parent reports.",
+        "strategy_title": "Guidance Services",
+        "phase1_title": "Academic Guidance",
+        "phase1_text": "One-on-one counseling on goal setting, field selection and creating a study plan.",
+        "phase2_title": "Psychological Support",
+        "phase2_text": "Expert support for exam anxiety, low motivation and stress management.",
+        "phase3_title": "Parent Communication",
+        "phase3_text": "Regular parent meetings and student progress reports.",
+        "result_title": "Goal",
+        "result_text": "Students with high confidence, goal-oriented focus and strong motivation.",
+        "tech_title": "Expert Staff · Need-based",
+        "tech_intro": "One-on-one meeting opportunity with an expert teacher and counselor staff.",
+        "tech_tools": "One-on-one sessions · Career plan · Parent report · Motivational support",
+        "features": [
+          "One-on-one sessions",
+          "Career plan",
+          "Parent report",
+          "Motivational support"
+        ],
+        "meta_title": "Guidance Program | Tarabya Final Academy",
+        "meta_description": "One-on-one guidance for career planning, exam anxiety management and motivation."
       }
     }
   },
   "References": {
-    "meta_title": "Our Success Stories | Halkalı Final LGS Academy",
+    "meta_title": "Our Success Stories | Tarabya Final Academy",
     "meta_description": "Success stories of our students who reached their target high schools in LGS.",
     "title": "Success Stories",
     "subtitle": "The real achievements of our students are inspiring."
   },
   "About": {
-    "meta_title": "About Us | Halkalı Final LGS Academy",
+    "meta_title": "About Us | Tarabya Final Academy",
     "meta_description": "A well-established educational institution. Experienced teachers, individual tracking and proven LGS results.",
     "title": "About Us",
-    "hero_slogan": "Halkalı's well-established educational home.",
-    "subtitle": "LGS Education in Halkalı",
-    "content": "Halkalı Final LGS Academy was founded with the aim of providing quality LGS preparation education to students in the region. Over the years, we have helped thousands of students reach their target high schools.",
+    "hero_slogan": "Tarabya's well-established educational home.",
+    "subtitle": "Education in Tarabya",
+    "content": "Tarabya Final Academy was founded with the aim of providing quality LGS and YKS preparation to students in Sarıyer. Over the years, we have helped thousands of students reach their target high schools and universities.",
     "vision": {
       "title": "Vision",
-      "text": "To be a trusted educational home where students in Halkalı and surrounding areas can access quality education in the easiest and most effective way."
+      "text": "To be a trusted educational home where students in Tarabya and surrounding areas can access quality education in the easiest and most effective way."
     },
     "mission": {
       "title": "Mission",
@@ -315,8 +455,8 @@
     }
   },
   "Contact": {
-    "meta_title": "Contact | Halkalı Final LGS Academy",
-    "meta_description": "Contact us for a free consultation. 0545 349 17 74",
+    "meta_title": "Contact | Tarabya Final Academy",
+    "meta_description": "Contact us for a free consultation. 0212 223 82 83 — tarabyaozelogretimkursu@abdkurumlari.com",
     "title": "Contact",
     "subtitle": "Reach out for any questions. We'll get back to you right away.",
     "form": {
@@ -341,7 +481,7 @@
     }
   },
   "WhyUs": {
-    "title": "Why Halkalı Final LGS Academy?",
+    "title": "Why Tarabya Final Academy?",
     "description": "We make a difference with an experienced teaching staff, individual student tracking, the Bayküş Library and proven LGS success.",
     "cta": "Get a Free Consultation"
   },
@@ -362,23 +502,31 @@
     "analysis": "Free Consultation",
     "blog": "Blog",
     "services_items": {
-      "5-sinif": "5th Grade",
       "6-sinif": "6th Grade",
       "7-sinif": "7th Grade",
-      "8-sinif": "8th Grade & LGS",
-      "deneme-kulubu": "Mock Exam Club"
+      "8-sinif": "8th Grade",
+      "8-sinif-vip": "8th Grade VIP",
+      "8-sinif-vip-ozel-dersli": "8th Grade VIP (Private)",
+      "10-sinif": "10th Grade",
+      "11-sinif": "11th Grade",
+      "11-sinif-vip": "11th Grade VIP",
+      "12-sinif": "12th Grade",
+      "12-sinif-vip": "12th Grade VIP",
+      "mezun": "Graduate",
+      "deneme-kulubu": "Mock Exam Club",
+      "ozel-ders": "Private Tutoring"
     }
   },
   "Footer": {
-    "address": "Halkalı Merkez, Fatih Cd. No:18, Kat:2 34303 Küçükçekmece/Istanbul, Istanbul, Turkey 34000",
-    "rights": "© 2026 Halkalı Final LGS Academy",
+    "address": "Ferahevler, Aydın Sokak No:13, 34457 Sarıyer/Istanbul",
+    "rights": "© 2026 Tarabya Final Academy",
     "quick_links": "Quick Links",
     "social": "Social Media",
     "contact": "Contact",
     "pages": "Pages",
-    "brand_tagline": "From Halkalı to Turkey's best quality high schools.",
+    "brand_tagline": "From Tarabya to Turkey's best quality high schools.",
     "rights_suffix": "All rights reserved.",
-    "tagline": "Küçükçekmece, Istanbul · LGS Academy",
+    "tagline": "Sarıyer, Istanbul · Final Education Institutions",
     "contact_info": "Contact Information"
   },
   "Works": {
@@ -427,23 +575,23 @@
     "items": [
       {
         "name": "Elif K.",
-        "role": "LGS — Galatasaray High School",
-        "text": "With the support I received throughout 8th grade, I reached my target score in LGS. Our teachers were truly very attentive."
+        "role": "YKS — Hacettepe University / Faculty of Medicine (National Rank: 124)",
+        "text": "I prepared with the VIP 12th Grade program. I ranked 124th nationally in YKS and got into Hacettepe Medicine. Individual tracking and weekly mock analyses made all the difference."
       },
       {
-        "name": "Mehmet T. (Parent)",
-        "role": "Child studying at a science high school via LGS",
-        "text": "My son studied here in 7th and 8th grade and won a place at İstanbul Erkek Lisesi. We were amazed by the individual attention."
+        "name": "Kerem A.",
+        "role": "YKS — Boğaziçi University / Computer Engineering (National Rank: 452)",
+        "text": "Improving both TYT and AYT simultaneously felt daunting. The structured program here helped me peak in both. Boğaziçi Computer Engineering is now a reality."
       },
       {
-        "name": "Selin A.",
-        "role": "LGS — Kabataş Erkek Lisesi",
-        "text": "Thanks to the Mock Exam Club, my exam anxiety went away and I entered LGS with confidence. The guidance service was invaluable."
+        "name": "Selin T.",
+        "role": "YKS — Koç University / Faculty of Law (100% Scholarship)",
+        "text": "With a personalized study plan, guidance support, and a highly motivated class environment, I earned a full scholarship to Koç University Faculty of Law."
       },
       {
-        "name": "Kerem B.",
-        "role": "LGS — Cağaloğlu Anadolu Lisesi",
-        "text": "I've been here since 7th grade. Thanks to the weekly mock exams and individual analysis, I felt ready for LGS."
+        "name": "Mert Ö.",
+        "role": "YKS — ITU / Faculty of Architecture (National Rank: 890)",
+        "text": "Weekly mock analyses pinpointed my weak areas and I closed every gap. I ranked 890th nationally in YKS and got into ITU Architecture. My teachers' contribution was immense."
       },
       {
         "name": "Zeynep Ö. (Parent)",
@@ -507,16 +655,24 @@
     "placeholder_email": "example@email.com",
     "placeholder_phone": "05XX XXX XX XX",
     "services": [
-      "5th Grade",
       "6th Grade",
       "7th Grade",
-      "8th Grade & LGS",
+      "8th Grade",
+      "8th Grade VIP",
+      "8th Grade VIP (Private)",
+      "10th Grade",
+      "11th Grade",
+      "11th Grade VIP",
+      "12th Grade",
+      "12th Grade VIP",
+      "Graduate",
       "Mock Exam Club",
+      "Private Tutoring",
       "Guidance"
     ]
   },
   "Blog": {
-    "meta_title": "Education Blog | Halkalı Final LGS Academy",
+    "meta_title": "Education Blog | Tarabya Final Academy",
     "meta_description": "Useful articles on LGS and middle school life.",
     "title_prefix": "Education",
     "title_highlight": "Blog",

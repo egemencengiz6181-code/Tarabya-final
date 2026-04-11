@@ -39,8 +39,8 @@ const badges: BadgeProps[] = [
     color: "from-[#2E3192] to-[#242672]"
   },
   { 
-    id: '5-sinif', 
-    label: '5. Sınıf', 
+    id: '10-sinif', 
+    label: '10. Sınıf', 
     icon: <BookOpen className="w-4 h-4" />,
     rotation: -5,
     x: 150,

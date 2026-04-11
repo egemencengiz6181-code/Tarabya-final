@@ -78,6 +78,8 @@ interface Props {
     phase2_text: string;
     phase3_title: string;
     phase3_text: string;
+    phase4_title?: string;
+    phase4_text?: string;
     result_title: string;
     result_text: string;
     tech_title: string;
@@ -215,6 +217,9 @@ export default function ServiceSlugContent({ slug, images, i18n }: Props) {
           <PhaseCard title={i18n.phase1_title} text={i18n.phase1_text} index={0} />
           <PhaseCard title={i18n.phase2_title} text={i18n.phase2_text} index={1} />
           <PhaseCard title={i18n.phase3_title} text={i18n.phase3_text} index={2} />
+          {i18n.phase4_title && i18n.phase4_text && (
+            <PhaseCard title={i18n.phase4_title} text={i18n.phase4_text} index={3} />
+          )}
         </div>
       </section>
 

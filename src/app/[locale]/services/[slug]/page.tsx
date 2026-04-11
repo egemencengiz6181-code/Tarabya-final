@@ -4,26 +4,40 @@ import { locales } from '@/config/locales';
 import ServiceSlugContent from './ServiceSlugContent';
 
 const VALID_SLUGS = [
-  '5-sinif', '6-sinif', '7-sinif', '8-sinif',
-  'deneme-kulubu', 'ozel-ders',
+  '6-sinif', '7-sinif', '8-sinif', '8-sinif-vip', '8-sinif-vip-ozel-dersli',
+  '10-sinif', '11-sinif', '11-sinif-vip', '12-sinif', '12-sinif-vip',
+  'mezun', 'deneme-kulubu', 'ozel-ders',
 ] as const;
 
 type ServiceSlug = (typeof VALID_SLUGS)[number];
 
 const slugImages: Record<ServiceSlug, { hero: string; tech: string; alt: string }> = {
-  '5-sinif':       { hero: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80', alt: '5. sınıf ders programı' },
-  '6-sinif':       { hero: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80', alt: '6. sınıf ders programı' },
-  '7-sinif':       { hero: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80', alt: '7. sınıf ders programı' },
-  '8-sinif':       { hero: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80', alt: '8. sınıf LGS hazırlık' },
-  'deneme-kulubu': { hero: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400&q=80', alt: 'Deneme kulübü ve sınav analizi' },
-  'ozel-ders':     { hero: 'https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1400&q=80', alt: 'Birebir özel ders' },
+  '6-sinif':                { hero: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80', alt: '6. sınıf ders programı' },
+  '7-sinif':                { hero: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80', alt: '7. sınıf ders programı' },
+  '8-sinif':                { hero: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80', alt: '8. sınıf LGS hazırlık' },
+  '8-sinif-vip':            { hero: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=80', alt: '8. sınıf VIP program' },
+  '8-sinif-vip-ozel-dersli':{ hero: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1400&q=80', alt: '8. sınıf VIP özel dersli' },
+  '10-sinif':               { hero: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80', alt: '10. sınıf ders programı' },
+  '11-sinif':               { hero: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80', alt: '11. sınıf YKS hazırlık' },
+  '11-sinif-vip':           { hero: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=80', alt: '11. sınıf VIP program' },
+  '12-sinif':               { hero: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400&q=80', alt: '12. sınıf YKS hazırlık' },
+  '12-sinif-vip':           { hero: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1400&q=80', alt: '12. sınıf VIP program' },
+  'mezun':                  { hero: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400&q=80', alt: 'Mezun YKS hazırlık' },
+  'deneme-kulubu':          { hero: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400&q=80', alt: 'Deneme kulübü ve sınav analizi' },
+  'ozel-ders':              { hero: 'https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=1400&q=80', tech: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1400&q=80', alt: 'Birebir özel ders' },
 };
 
 const defaultImages = {
   hero: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1400&q=80',
   tech: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&q=80',
-  alt: 'Halkalı Final LGS Dershanesi programları',
+  alt: 'Tarabya Final Dershanesi programları',
 };
+
+// Slugs that have a phase4 (Deneme Kulübü optional)
+const SLUGS_WITH_PHASE4 = new Set([
+  '7-sinif', '8-sinif', '8-sinif-vip', '8-sinif-vip-ozel-dersli',
+  '11-sinif', '11-sinif-vip', '12-sinif', '12-sinif-vip', 'mezun',
+]);
 
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
@@ -44,6 +58,7 @@ export default async function ServicePage({
 
   const t = await getTranslations({ locale, namespace: 'Services' });
   const toolsRaw = t(`items.${slug}.tech_tools`) as string;
+  const hasPhase4 = SLUGS_WITH_PHASE4.has(slug);
 
   const i18n = {
     title: t('title'),
@@ -65,6 +80,8 @@ export default async function ServicePage({
     phase2_text: t(`items.${slug}.phase2_text`),
     phase3_title: t(`items.${slug}.phase3_title`),
     phase3_text: t(`items.${slug}.phase3_text`),
+    phase4_title: hasPhase4 ? t(`items.${slug}.phase4_title`) : undefined,
+    phase4_text: hasPhase4 ? t(`items.${slug}.phase4_text`) : undefined,
     result_title: t(`items.${slug}.result_title`),
     result_text: t(`items.${slug}.result_text`),
     tech_title: t(`items.${slug}.tech_title`),

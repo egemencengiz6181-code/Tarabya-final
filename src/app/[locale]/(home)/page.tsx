@@ -17,7 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Index' });
-  const origin = 'https://www.halkalifinal.com';
+  const origin = 'https://www.tarabyafinal.com';
   return {
     title: t('title'),
     description: t('description'),
@@ -89,7 +89,7 @@ export default async function IndexPage({
               </span>
             </>
           }
-          description="Halkalı Final LGS Dershanesi, 5. sınıftan 8. sınıfa kadar öğrencilerin LGS'de hedef liselerine ulaşmalarını sağlamak için deneyimli öğretmen kadrosu ve zengin eğitim materyalleriyle akademik seviyelerini yükseltmeye odaklanır. Sunduğumuz programlar öğrencilerin yalnızca teorik bilgi değil, aynı zamanda pratik becerilerini de geliştirerek sınavlarda yüksek başarı göstermelerini sağlar."
+          description="Tarabya Final Dershanesi, 6. sınıftan mezunlara kadar LGS ve YKS'de hedef okullara ulaşmak için deneyimli öğretmen kadrosu ve zengin eğitim materyalleriyle akademik seviyeyi yükseltmeye odaklanır. Sunduğumuz programlar öğrencilerin yalnızca teorik bilgi değil, aynı zamanda pratik becerilerini de geliştirerek sınavlarda yüksek başarı göstermelerini sağlar."
         />
 
         <TestimonialsSection items={testimonialItems} title={testimonialsTitle} subtitle={testimonialsSubtitle} />
