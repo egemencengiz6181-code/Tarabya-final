@@ -109,7 +109,7 @@ export default function Navbar() {
 
   return (
     <>
-    <header className="fixed top-0 left-0 right-0 z-50 w-full px-6 md:px-12 py-2 md:py-4 flex items-center justify-between pointer-events-none">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full px-4 md:px-10 py-2 md:py-3 flex items-center justify-between pointer-events-none">
       {/* Mobile glassmorphism strip — visible only on mobile */}
       <div className="absolute inset-0 z-0 md:hidden bg-black/60 [backdrop-filter:blur(25px)] [-webkit-backdrop-filter:blur(25px)] border-b border-white/10" />
 
@@ -121,7 +121,7 @@ export default function Navbar() {
             alt="Tarabya Final Dershanesi" 
             width={1531} 
             height={577} 
-            className="h-[110px] md:h-[150px] w-auto object-contain"
+            className="h-[48px] md:h-[64px] w-auto object-contain"
             priority
           />
         </Link>
@@ -258,7 +258,7 @@ export default function Navbar() {
                 alt="Tarabya Final Dershanesi"
                 width={1531}
                 height={577}
-                className="h-[110px] w-auto object-contain"
+                className="h-[48px] w-auto object-contain"
                 priority
               />
             </Link>
