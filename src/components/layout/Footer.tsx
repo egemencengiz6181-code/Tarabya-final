@@ -50,7 +50,7 @@ export default function Footer() {
                 alt="Tarabya Final Dershanesi" 
                 width={1531} 
                 height={577} 
-                className="h-[200px] w-auto object-contain"
+                className="h-[100px] w-auto object-contain"
               />
             </Link>
             <p className="text-foreground/40 font-light leading-relaxed max-w-xs">

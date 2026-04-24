@@ -136,7 +136,7 @@ export default function HoverFooter() {
                 alt="Tarabya Final Dershanesi"
                 width={1531}
                 height={577}
-                className="h-[200px] w-auto object-contain"
+                className="h-[100px] w-auto object-contain"
               />
             </Link>
             <p className="text-sm text-slate-500 dark:text-white/30 leading-relaxed max-w-xs">
