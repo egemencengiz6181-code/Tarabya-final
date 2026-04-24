@@ -1,11 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight, Phone, X } from "lucide-react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { useState } from "react";
 
 const Waves = dynamic(() => import('@/components/ui/waves'), { ssr: false });
 
@@ -22,6 +23,7 @@ export default function HeroMain() {
   const t = useTranslations("HeroMain");
   const { resolvedTheme } = useTheme();
   const wavesBg = resolvedTheme === "dark" ? "#000000" : "#f4f4f8";
+  const [phoneOpen, setPhoneOpen] = useState(false);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* ── WAVES BACKGROUND — sadece desktop (mobilde performans tasarrufu) ── */}
@@ -85,7 +87,7 @@ export default function HeroMain() {
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[#E21F26] animate-pulse" />
           <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#E21F26]/80">
-            Halkalı · Küçükçekmece / İstanbul
+            Tarabya · Sarıyer / İstanbul
           </span>
         </motion.div>
 
@@ -133,19 +135,83 @@ export default function HeroMain() {
           animate="visible"
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a
-            href="https://wa.me/905453491774"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => setPhoneOpen(true)}
             className="group inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#E21F26] hover:bg-[#BE1821] text-white font-semibold text-sm tracking-wide transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_32px_rgba(226,31,38,0.45)] hover:shadow-[0_0_48px_rgba(226,31,38,0.6)]"
-            style={{ backgroundColor: '#E21F26' }}
           >
-            <MessageCircle className="w-4 h-4" />
+            <Phone className="w-4 h-4" />
             {t("cta")}
             <ArrowRight className="w-4 h-4 -translate-x-1 group-hover:translate-x-0 transition-transform" />
-          </a>
+          </button>
         </motion.div>
       </div>
+
+      {/* ── PHONE POPUP ──────────────────────────────────────── */}
+      <AnimatePresence>
+        {phoneOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 [backdrop-filter:blur(8px)]"
+            onClick={() => setPhoneOpen(false)}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.92, y: 16 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.92, y: 16 }}
+              transition={{ type: "spring", stiffness: 320, damping: 28 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-sm bg-[#0a0a0f]/95 border border-white/10 [backdrop-filter:blur(24px)] rounded-3xl p-8 shadow-2xl"
+            >
+              {/* Close */}
+              <button
+                onClick={() => setPhoneOpen(false)}
+                className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-white/50 hover:text-white transition-colors"
+                aria-label="Kapat"
+              >
+                <X className="w-4 h-4" />
+              </button>
+
+              <div className="text-center mb-7">
+                <div className="w-12 h-12 rounded-full bg-[#E21F26]/15 flex items-center justify-center mx-auto mb-4">
+                  <Phone className="w-5 h-5 text-[#E21F26]" />
+                </div>
+                <h3 className="text-lg font-bold text-white mb-1">Bizi Arayın</h3>
+                <p className="text-sm text-white/40">Kayıt ve bilgi için aşağıdaki numaralardan ulaşabilirsiniz.</p>
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <a
+                  href="tel:+902122238283"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#E21F26]/15 border border-white/8 hover:border-[#E21F26]/40 transition-all group"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-[#E21F26]/10 group-hover:bg-[#E21F26]/20 flex items-center justify-center transition-colors shrink-0">
+                    <Phone className="w-4 h-4 text-[#E21F26]" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-white/30 mb-0.5">Telefon 1</p>
+                    <p className="text-base font-semibold text-white">0212 223 82 83</p>
+                  </div>
+                </a>
+
+                <a
+                  href="tel:+905453492087"
+                  className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 hover:bg-[#E21F26]/15 border border-white/8 hover:border-[#E21F26]/40 transition-all group"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-[#E21F26]/10 group-hover:bg-[#E21F26]/20 flex items-center justify-center transition-colors shrink-0">
+                    <Phone className="w-4 h-4 text-[#E21F26]" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-white/30 mb-0.5">Telefon 2</p>
+                    <p className="text-base font-semibold text-white">0545 349 20 87</p>
+                  </div>
+                </a>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* ── BOTTOM FADE ──────────────────────────────────────── */}
       <div className="absolute bottom-0 left-0 right-0 h-32 z-[2] bg-gradient-to-t from-background to-transparent" />

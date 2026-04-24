@@ -11,7 +11,7 @@ export default function Footer() {
   const nt = useTranslations('Navbar');
 
   const socialLinks = [
-    { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/nazmi.arikanhalkali/", label: "Instagram" },
+    { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/tarabyafinalegitimkurumlari", label: "Instagram" },
   ];
 
   const navLinks = [
@@ -26,7 +26,7 @@ export default function Footer() {
       {/* Google Maps Section */}
       <div className="w-full h-[400px] relative overflow-hidden group">
         <iframe
-          src="https://maps.google.com/maps?q=Fatih+Cad.+No:18/1,+Halkalı+Merkez,+Küçükçekmece,+İstanbul&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.google.com/maps?q=Ferahevler,+Aydın+Sokak+No:13,+34457+Sarıyer/İstanbul&t=&z=16&ie=UTF8&iwloc=&output=embed"
           width="100%"
           height="100%"
           style={{ border: 0, filter: 'grayscale(1) contrast(1.2) invert(0.9)' }}
@@ -48,9 +48,9 @@ export default function Footer() {
               <Image 
                 src="/logos/final%20logo%20png.png" 
                 alt="Tarabya Final Dershanesi" 
-                width={200} 
-                height={80} 
-                className="h-20 w-auto object-contain"
+                width={1531} 
+                height={577} 
+                className="h-[200px] w-auto object-contain"
               />
             </Link>
             <p className="text-foreground/40 font-light leading-relaxed max-w-xs">

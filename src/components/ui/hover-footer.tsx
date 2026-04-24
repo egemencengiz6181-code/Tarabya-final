@@ -134,9 +134,9 @@ export default function HoverFooter() {
               <Image
                 src="/logos/final%20logo%20png.png"
                 alt="Tarabya Final Dershanesi"
-                width={180}
-                height={60}
-                className="h-16 w-auto object-contain"
+                width={1531}
+                height={577}
+                className="h-[200px] w-auto object-contain"
               />
             </Link>
             <p className="text-sm text-slate-500 dark:text-white/30 leading-relaxed max-w-xs">
@@ -202,7 +202,7 @@ export default function HoverFooter() {
 
         {/* TextHoverEffect */}
         <div className="py-8 -mx-6 px-6 overflow-hidden">
-          <TextHoverEffect text="HALKALI FINAL" />
+          <TextHoverEffect text="TARABYA FINAL" />
         </div>
 
         {/* Bottom bar */}

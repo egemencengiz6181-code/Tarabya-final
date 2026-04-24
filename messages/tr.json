@@ -6,7 +6,7 @@
   "Hero": {
     "eyebrow": "Tarabya · Sarıyer / İstanbul",
     "title": "Başarıya Giden Yol",
-    "subtitle": "LGS'de hedeflediğin liseye ulaşmak için doğru adres.",
+    "subtitle": "LGS ve YKS'de hedefine ulaşmak için doğru adres.",
     "headline": "Hedefine Giden Yolu Birlikte Çiziyoruz",
     "slogan": "Deneyimli öğretmenler, bireysel takip ve kanıtlanmış ders programlarıyla yanındayız.",
     "cta": "Programları Keşfet"
@@ -15,7 +15,7 @@
     "title_prefix": "Başarıya",
     "title_highlight": "giden yol",
     "title_suffix": "buradan geçer.",
-    "subtitle": "LGS'de hedef lisene ulaşmak için doğru adres. Deneyimli öğretmenler, kişisel takip ve kanıtlanmış ders programlarıyla yanındayız.",
+    "subtitle": "LGS ve YKS'de hedefine ulaşmak için doğru adres. Deneyimli öğretmenler, kişisel takip ve kanıtlanmış ders programlarıyla yanındayız.",
     "cta": "Kayıt ve Bilgi Al"
   },
   "Services": {
@@ -485,7 +485,7 @@
   },
   "WhyUs": {
     "title": "Neden Tarabya Final Dershanesi?",
-    "description": "Deneyimli öğretmen kadrosu, bireysel öğrenci takibi, Baykuş Kütüphanesi ve kanıtlanmış LGS başarısıyla fark yaratıyoruz.",
+    "description": "Deneyimli öğretmen kadrosu, bireysel öğrenci takibi ve kanıtlanmış LGS & YKS başarısıyla fark yaratıyoruz.",
     "cta": "Ücretsiz Ön Görüşme Al"
   },
   "LetsWork": {
