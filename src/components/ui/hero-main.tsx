@@ -54,7 +54,7 @@ export default function HeroMain() {
           fill
           className="object-cover object-center opacity-[0.08]"
           sizes="100vw"
-          loading="lazy"
+          priority
         />
       </div>
 

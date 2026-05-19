@@ -29,10 +29,13 @@ export async function generateMetadata({
       description,
       url: path,
       locale: locale === 'en' ? 'en_US' : 'tr_TR',
+      images: [{ url: `${origin}/okul/okul.jpeg`, width: 1280, height: 720, alt: 'Tarabya Final Dershanesi' }],
     },
     twitter: {
+      card: 'summary_large_image',
       title,
       description,
+      images: [`${origin}/okul/okul.jpeg`],
     },
   };
 }
