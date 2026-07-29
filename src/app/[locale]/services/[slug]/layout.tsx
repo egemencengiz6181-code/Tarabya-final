@@ -3,73 +3,73 @@ import { getTranslations } from 'next-intl/server';
 
 // Valid service slugs that match messages keys
 const validSlugs = [
-  '6-sinif',
-  '7-sinif',
-  '8-sinif',
-  '8-sinif-vip',
-  '8-sinif-vip-ozel-dersli',
-  '10-sinif',
-  '11-sinif',
-  '11-sinif-vip',
-  '12-sinif',
-  '12-sinif-vip',
-  'mezun',
-  'deneme-kulubu',
-  'ozel-ders',
+ '6-sinif',
+ '7-sinif',
+ '8-sinif',
+ '8-sinif-vip',
+ '8-sinif-vip-ozel-dersli',
+ '10-sinif',
+ '11-sinif',
+ '11-sinif-vip',
+ '12-sinif',
+ '12-sinif-vip',
+ 'mezun',
+ 'deneme-kulubu',
+ 'ozel-ders',
 ] as const;
 
 type ServiceSlug = (typeof validSlugs)[number];
 
 function isValidSlug(slug: string): slug is ServiceSlug {
-  return validSlugs.includes(slug as ServiceSlug);
+ return validSlugs.includes(slug as ServiceSlug);
 }
 
 export async function generateMetadata({
-  params,
+ params,
 }: {
-  params: Promise<{ locale: string; slug: string }>;
+ params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { locale, slug } = await params;
-  const origin = 'https://www.tarabyafinal.com';
-  const path = `${origin}/${locale}/services/${slug}`;
+ const { locale, slug } = await params;
+ const origin = 'https://www.tarabyafinal.com';
+ const path = `${origin}/${locale}/services/${slug}`;
 
-  if (!isValidSlug(slug)) {
-    return {
-      alternates: { canonical: path },
-    };
-  }
+ if (!isValidSlug(slug)) {
+ return {
+ alternates: { canonical: path },
+ };
+ }
 
-  const t = await getTranslations({ locale, namespace: `Services.items.${slug}` });
+ const t = await getTranslations({ locale, namespace: `Services.items.${slug}` });
 
-  const title = t('meta_title');
-  const description = t('meta_description');
+ const title = t('meta_title');
+ const description = t('meta_description');
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: path,
-      languages: {
-        tr: `${origin}/tr/services/${slug}`,
-        en: `${origin}/en/services/${slug}`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: path,
-      locale: locale === 'en' ? 'en_US' : 'tr_TR',
-      images: [{ url: `${origin}/okul/okul.jpeg`, width: 1280, height: 720, alt: 'Tarabya Final Dershanesi' }],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: [`${origin}/okul/okul.jpeg`],
-    },
-  };
+ return {
+ title,
+ description,
+ alternates: {
+ canonical: path,
+ languages: {
+  tr: `${origin}/tr/services/${slug}`,
+  en: `${origin}/en/services/${slug}`,
+ },
+ },
+ openGraph: {
+ title,
+ description,
+ url: path,
+ locale: locale === 'en' ? 'en_US' : 'tr_TR',
+ images: [{ url: `${origin}/okul/okul.jpeg`, width: 1280, height: 720, alt: 'Tarabya Final Dershanesi' }],
+ },
+ twitter: {
+ card: 'summary_large_image',
+ title,
+ description,
+ images: [`${origin}/okul/okul.jpeg`],
+ },
+ };
 }
 
 export default function ServiceSlugLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+ return <>{children}</>;
 }

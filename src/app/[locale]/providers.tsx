@@ -4,19 +4,19 @@ import { ThemeProvider } from "next-themes";
 import { NextIntlClientProvider, type AbstractIntlMessages } from "next-intl";
 
 export default function Providers({
-  children,
-  locale,
-  messages,
+ children,
+ locale,
+ messages,
 }: {
-  children: React.ReactNode;
-  locale: string;
-  messages: AbstractIntlMessages;
+ children: React.ReactNode;
+ locale: string;
+ messages: AbstractIntlMessages;
 }) {
-  return (
-    <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-      <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Istanbul">
-        {children}
-      </NextIntlClientProvider>
-    </ThemeProvider>
-  );
+ return (
+ <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+ <NextIntlClientProvider locale={locale} messages={messages} timeZone="Europe/Istanbul">
+  {children}
+ </NextIntlClientProvider>
+ </ThemeProvider>
+ );
 }
