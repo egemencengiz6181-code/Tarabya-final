@@ -3,7 +3,6 @@
 import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, Send, Loader2 } from "lucide-react";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function FormPage() {
@@ -114,27 +113,11 @@ export default function FormPage() {
 
  return (
  <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-background via-background to-muted px-6 py-12">
- {/* Logo */}
- <motion.div
-  initial={{ opacity: 0, y: -20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
-  className="mb-8"
- >
-  <Image
-  src="/logos/final%20logo%20png.png"
-  alt="Tarabya Final"
-  width={180}
-  height={80}
-  className="object-contain"
-  />
- </motion.div>
-
  {/* Title */}
  <motion.div
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5, delay: 0.1 }}
+  transition={{ duration: 0.5 }}
   className="text-center mb-8 max-w-2xl"
  >
   <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-3">
