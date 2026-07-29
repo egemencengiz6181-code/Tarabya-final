@@ -118,7 +118,7 @@ export default function FormPage() {
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.5 }}
-  className="text-center mb-8 max-w-2xl"
+  className="text-center mb-8 max-w-2xl mt-20"
  >
   <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-3">
   Kayıt Başvuru Formu
